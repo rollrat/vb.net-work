@@ -1,0 +1,19 @@
+ # Swift Script Tester
+
+var varTest1
+var varTest2 : String
+var varTest3 : Int
+var varTest4 : Variable
+var varTest5 : String = "rollrat"
+var varTest6 : String = 3
+var varTest7 : String = varx
+var varTest8 : Int = "rollrat"
+var varTest9 : Int = 3
+var varTest10 : Int = varx
+var varTest11 : Variable = "rollrat"
+var varTest11 : Variable = 3
+var varTest12 : Variable = varx
+var varTest13 = "rollrat"
+var varTest14 = 3
+var varTest15 = varx
+var varTest16 : asldfh

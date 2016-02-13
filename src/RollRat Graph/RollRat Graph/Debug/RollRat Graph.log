@@ -1,0 +1,20 @@
+﻿빌드 시작: 2015-01-30 오후 9:35:01
+     1>2 노드의 "C:\Users\TETO\Documents\Visual Studio 2013\Projects\RollRat Graph\RollRat Graph\RollRat Graph.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt gc.c
+         gc.c
+     1>c:\users\teto\documents\visual studio 2013\projects\rollrat graph\rollrat graph\gc.c(43): warning C4047: '=' : 'PGCINTERNAL'의 간접 참조 수준이 'PGCINTERNAL *'과(와) 다릅니다.
+     1>c:\users\teto\documents\visual studio 2013\projects\rollrat graph\rollrat graph\gc.c(52): warning C4133: '함수' : 'HDC'과(와) 'HWND' 사이의 형식이 호환되지 않습니다.
+     1>c:\users\teto\documents\visual studio 2013\projects\rollrat graph\rollrat graph\gc.c(52): warning C4133: '함수' : 'PGCVALIABLE'과(와) 'HDC' 사이의 형식이 호환되지 않습니다.
+     1>c:\users\teto\documents\visual studio 2013\projects\rollrat graph\rollrat graph\gc.c(52): error C2440: '함수' : 'RECT'에서 'PGCVALIABLE'(으)로 변환할 수 없습니다.
+     1>c:\users\teto\documents\visual studio 2013\projects\rollrat graph\rollrat graph\gc.c(52): warning C4024: 'GciDrawGraph' : 형식 및 실제 매개 변수 3의 형식이 서로 다릅니다.
+     1>c:\users\teto\documents\visual studio 2013\projects\rollrat graph\rollrat graph\gc.c(52): error C2198: 'GciDrawGraph' : 호출에 매개 변수가 너무 적습니다.
+     1>c:\users\teto\documents\visual studio 2013\projects\rollrat graph\rollrat graph\gc.c(63): warning C4047: 'return' : 'LRESULT'의 간접 참조 수준이 'RECT *'과(와) 다릅니다.
+     1>c:\users\teto\documents\visual studio 2013\projects\rollrat graph\rollrat graph\gc.c(80): warning C4028: 정식 매개 변수 2이(가) 선언과 다릅니다.
+     1>c:\users\teto\documents\visual studio 2013\projects\rollrat graph\rollrat graph\gc.c(80): warning C4028: 정식 매개 변수 3이(가) 선언과 다릅니다.
+     1>c:\users\teto\documents\visual studio 2013\projects\rollrat graph\rollrat graph\gc.c(80): warning C4029: 선언된 정식 매개 변수 목록이 정의와 다릅니다.
+     1>"C:\Users\TETO\Documents\Visual Studio 2013\Projects\RollRat Graph\RollRat Graph\RollRat Graph.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:01.16

@@ -1,0 +1,21 @@
+﻿ROLLRAT FILE HISTORY
+
+ver 1.0
+	- DB기능, Load File 기능, Command 제외 버튼 기능
+
+ver 1.1
+	- File Spy 0.1, File Search/Info, Command
+
+ver 1.2
+	- 줄 수 계산 기능, Folder Info, Drag & Drop 기능
+
+ver 1.2.1
+	- manifest 개선
+
+ver 1.2.2
+	- last update, 폴더 클릭기능 추가, db zip 기능 추가, 상태표시줄 추가
+
+ver 1.2.3
+	- open source화, 새 파일 프로젝트 시작
+
+///////////////////////////////

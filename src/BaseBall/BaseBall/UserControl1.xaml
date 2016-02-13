@@ -1,0 +1,54 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" xmlns:Primitives="clr-namespace:Telerik.Windows.Controls.RibbonView.Primitives;assembly=Telerik.Windows.Controls.RibbonView" xmlns:SevenSegment="clr-namespace:BaseBall.SevenSegment" xmlns:local="clr-namespace:BaseBall" xmlns:SevenSegment1="clr-namespace:SevenSegment;assembly=SevenSegment" xmlns:Effects="clr-namespace:Telerik.Windows.Controls.ColorEditor.Effects;assembly=Telerik.Windows.Controls.Input" x:Class="UserControl1" 
+             mc:Ignorable="d" Width="1055" Height="404">
+    <Grid HorizontalAlignment="Left" Width="1055">
+        <ComboBox HorizontalAlignment="Left" Height="22" Margin="84,12,0,0" VerticalAlignment="Top" Width="191" SelectedIndex="0" x:Name="cmb">
+            <!--<Button Background="#FFDDDDDD" Content="2 자리로 시작"/>
+            <Button Background="#FFDDDDDD" Content="3 자리로 시작"/>
+            <Button Background="#FFDDDDDD" Content="4 자리로 시작"/>-->
+            <Label Content="2 자리"/>
+            <Label Content="3 자리"/>
+            <Label Content="4 자리"/>
+            <Label Content="5 자리"/>
+            <Label Content="6 자리"/>
+            <Separator/>
+            <!--<Label Content="사용자 정의"/>  사용자 정의는 아직 구현 안함-->
+        </ComboBox>
+        <Label Content="자릿수 : " HorizontalAlignment="Left" Height="24" Margin="14,10,0,0" VerticalAlignment="Top" Width="65" Foreground="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}"/>
+        <Button Content="게임시작" HorizontalAlignment="Left" Height="24" Margin="280,10,0,0" VerticalAlignment="Top" Width="140" Click="Button_Click" x:Name="button1"/>
+        <TabControl HorizontalAlignment="Left" Height="358" Margin="10,39,0,0" VerticalAlignment="Top" Width="1039">
+            <TabItem Header="게임 패널">
+                <Grid Background="#FFE5E5E5" x:Name="grid" IsEnabled="False" Margin="0,1,0,-1">
+                    <Button Content="Next" HorizontalAlignment="Left" Height="39" Margin="876,280,0,0" VerticalAlignment="Top" Width="147" Click="Button_Click_1"/>
+                    <Label Content="Strike : 0 Ball : 0 Out : 0" HorizontalAlignment="Left" Margin="20,341,0,-57" VerticalAlignment="Top" Width="381" FontSize="20" Height="46" x:Name="out" IsEnabled="False" IsHitTestVisible="False"/>
+                    <TextBox HorizontalAlignment="Left" Height="22" Margin="715,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="308" x:Name="ttx"/>
+                    <Label Content="자릿수 : 0" HorizontalAlignment="Left" Height="26" Margin="10,294,0,0" VerticalAlignment="Top" Width="122" x:Name="jari"/>
+                    <Label Content="" HorizontalAlignment="Left" Height="48" Margin="715,200,0,0" VerticalAlignment="Top" Width="308" x:Name="status" FontFamily="Malgun Gothic" FontSize="20"/>
+                    <SevenSegment1:SevenSegmentControl x:Name="strike" HorizontalAlignment="Left" Height="105" Margin="246,36,0,0" VerticalAlignment="Top" Width="60" NumberColor="Yellow"   RenderTransformOrigin="0.483,0.505" IsEnabled="False"/>
+                    <Label Content="Strike" HorizontalAlignment="Left" Height="63" Margin="129,78,0,0" VerticalAlignment="Top" Width="117" FontSize="36"/>
+                    <Label Content="Ball" HorizontalAlignment="Left" Height="63" Margin="411,78,0,0" VerticalAlignment="Top" Width="86" FontSize="36"/>
+                    <SevenSegment1:SevenSegmentControl x:Name="ball" HorizontalAlignment="Left" Height="105" Margin="497,36,0,0" VerticalAlignment="Top" Width="60" NumberColor="Green"  RenderTransformOrigin="0.483,0.505"/>
+                    <Label x:Name="tout" Content="OUT" HorizontalAlignment="Left" Height="112" Margin="715,39,0,0" VerticalAlignment="Top" Width="172" FontSize="72" BorderThickness="0" Background="{x:Null}" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+                        <Label.Effect>
+                            <DropShadowEffect Direction="200" Color="#FFAEA9A9"/>
+                        </Label.Effect>
+                    </Label>
+                    <Label Content="카운트 : 0" HorizontalAlignment="Left" Height="26" Margin="10,276,0,0" VerticalAlignment="Top" Width="122" x:Name="count_"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="모든 처리 과정">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox HorizontalAlignment="Left" Height="310" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="1013" x:Name="textboxproccess"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Content="끝내기" HorizontalAlignment="Left" Height="24" Margin="905,10,0,0" VerticalAlignment="Top" Width="140" Click="restart_click" x:Name="restart" RenderTransformOrigin="1.507,1.042"/>
+        <Button Content="새 게임" HorizontalAlignment="Left" Height="24" Margin="760,10,0,0" VerticalAlignment="Top" Width="140" Click="aend_click" x:Name="aend" RenderTransformOrigin="1.507,1.042" IsEnabled="False"/>
+
+
+    </Grid>
+</UserControl>
